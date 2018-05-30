@@ -3,7 +3,7 @@ package com.example.jessica.comelancav1;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class listRestaurant extends AppCompatActivity {
+public class ListRestaurantActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

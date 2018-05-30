@@ -35,6 +35,7 @@
         android:layout_marginStart="2dp"
         android:layout_marginTop="208dp"
         android:text="OK"
+        android:onClick="openAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textCep"
