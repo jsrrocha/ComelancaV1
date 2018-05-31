@@ -10,22 +10,25 @@
 
     <EditText
         android:id="@+id/textCep"
-        android:layout_width="215dp"
+        android:layout_width="229dp"
         android:layout_height="46dp"
         android:layout_marginBottom="256dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginStart="85dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="71dp"
         android:layout_marginTop="209dp"
         android:ems="10"
+        android:hint="Digite seu CEP"
         android:inputType="none|textPostalAddress"
         android:text="Digite seu CEP"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/buttonOK"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonOK"
         android:layout_width="63dp"
         android:layout_height="46dp"
         android:layout_marginBottom="261dp"
@@ -43,7 +46,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonLogin"
         android:layout_width="167dp"
         android:layout_height="37dp"
         android:layout_marginBottom="155dp"
@@ -54,8 +57,28 @@
         android:layout_marginTop="16dp"
         android:text="Entrar ou cadastrar"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOK"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="172dp"
+        android:layout_height="27dp"
+
+        android:layout_marginBottom="221dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="102dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="openAddressActivity"
+        android:text="Ou informe seu endereço"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCep" />
 </android.support.constraint.ConstraintLayout>
