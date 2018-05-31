@@ -12,10 +12,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         this.setTitle("ComeLança");
-
-
     }
-    public void openAddress(View view) {
+    public void openAddressActivity(View view) {
         Intent intent = new Intent(this, AddressActivity.class);
         startActivity(intent);
     }
