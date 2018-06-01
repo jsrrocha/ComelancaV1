@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".MadrugaLanchesActivity">
+
+    <TextView
+        android:id="@+id/textVeg6"
+        android:layout_width="271dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="372dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/border_view"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"
+        android:text="Hamburguer, maionese, catchup, mostarda, alface, tomate, ovo e queijo. R$ 11.00"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMadruga"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioButton
+        android:id="@+id/radioButtonDog"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="5dp"
+        android:text="Dog salsicha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVeg6" />
+
+    <TextView
+        android:id="@+id/textViewMadruga"
+        android:layout_width="253dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:text="Madruga dos Lanches"
+        android:textSize="24sp"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonMix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDog"
+        android:layout_width="271dp"
+        android:layout_height="69dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_view"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"
+        android:text="Salsicha, maionese, catchup, mostarda, alface,tomate e queijo. R$ 9.00"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVeg6" />
+
+    <RadioButton
+        android:id="@+id/radioButtonXis"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="11dp"
+        android:text="Xis salada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMadruga" />
+</android.support.constraint.ConstraintLayout>

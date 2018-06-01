@@ -8,27 +8,52 @@
     tools:context=".Natural2youAcitivity">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="0dp"
-        android:layout_height="41dp"
+        android:id="@+id/textMix"
+        android:layout_width="273dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/border_view"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"
+        android:text="Mix de folhas verdes(Alface crespa, rúgula e agrião), cenoura e alface americana. R$ 20.00"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVeg" />
+
+    <TextView
+        android:id="@+id/textViewNatural"
+        android:layout_width="178dp"
+        android:layout_height="38dp"
         android:layout_marginBottom="38dp"
-        android:layout_marginEnd="117dp"
-        android:layout_marginLeft="117dp"
-        android:layout_marginRight="117dp"
-        android:layout_marginStart="117dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginRight="91dp"
+        android:layout_marginStart="115dp"
         android:layout_marginTop="10dp"
         android:text="Natural 2 you"
         android:textSize="24sp"
         app:fontFamily="casual"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonMix"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/radioButtonMix"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="100dp"
+        android:text="Salada mix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNatural" />
+
+    <RadioButton
+        android:id="@+id/radioButtonVeg"
         android:layout_width="wrap_content"
         android:layout_height="29dp"
         android:layout_marginLeft="56dp"
@@ -36,7 +61,7 @@
         android:layout_marginTop="20dp"
         android:text="Prato vegetariano"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewNatural" />
 
     <TextView
         android:id="@+id/textVeg"
@@ -55,6 +80,8 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewNatural"
+        app:layout_constraintVertical_bias="1.0" />
 </android.support.constraint.ConstraintLayout>

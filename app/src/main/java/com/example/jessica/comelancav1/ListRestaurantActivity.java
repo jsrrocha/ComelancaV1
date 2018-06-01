@@ -40,6 +40,9 @@ public class ListRestaurantActivity extends AppCompatActivity {
                 }else if(position == 1) {
                     Intent intent = new Intent(ListRestaurantActivity.this, PizzariaGataoActivity.class);
                     startActivity(intent);
+                }else if(position==2){
+                    Intent intent = new Intent(ListRestaurantActivity.this, MadrugaLanchesActivity.class);
+                    startActivity(intent);
                 }
             }
         });

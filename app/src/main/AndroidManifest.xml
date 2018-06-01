@@ -20,7 +20,8 @@
         <activity android:name=".AddressActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".PizzariaGataoActivity" />
-        <activity android:name=".Natural2youAcitivity"></activity>
+        <activity android:name=".Natural2youAcitivity" />
+        <activity android:name=".MadrugaLanchesActivity"></activity>
     </application>
 
 </manifest>
