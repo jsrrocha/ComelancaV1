@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".PizzariaGataoActivity">
+
+    <TextView
+        android:id="@+id/textVeg2"
+        android:layout_width="271dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="370dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/border_view"
+        android:paddingLeft="10dp"
+        android:paddingTop="30dp"
+        android:text="Hamburguer de legumes, arroz, feijão, alface e tomate. R$ 23.00"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="Pizza 4 queijos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="200dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginRight="97dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="16dp"
+        android:text="Pizzaria do Gatão "
+        android:textSize="24sp"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
