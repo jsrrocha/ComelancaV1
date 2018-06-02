@@ -83,4 +83,18 @@
         android:text="Xis salada"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMadruga" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="269dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="openPaymentOptionsActivity"
+        android:text="Avançar"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMadruga"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/textViewMadruga"
+        app:layout_constraintTop_toBottomOf="@+id/textDog" />
 </android.support.constraint.ConstraintLayout>
