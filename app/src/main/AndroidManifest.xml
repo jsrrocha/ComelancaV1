@@ -21,6 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".StatusActivity" />
         <activity android:name=".ListRestaurantActivity" />
         <activity android:name=".AddressActivity" />
         <activity android:name=".SignUpActivity" />
