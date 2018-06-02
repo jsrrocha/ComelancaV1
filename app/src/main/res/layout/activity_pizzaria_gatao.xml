@@ -7,6 +7,40 @@
     android:background="@drawable/background1"
     tools:context=".PizzariaGataoActivity">
 
+    <Button
+        android:id="@+id/buttonBack3"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="234dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:onClick="openListRestaurantActivity"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMix" />
+
+    <Button
+        android:id="@+id/buttonGo3"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="234dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:text="Avançar"
+        android:onClick="openCartActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewNatural"
+        app:layout_constraintTop_toBottomOf="@+id/textMix" />
+
     <TextView
         android:id="@+id/textVeg2"
         android:layout_width="271dp"
@@ -16,17 +50,17 @@
         android:layout_marginLeft="56dp"
         android:layout_marginRight="61dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="13dp"
         android:background="@drawable/border_view"
         android:paddingLeft="10dp"
         android:paddingTop="30dp"
-        android:text="Mussarela,catupiry,provolone e parmesão.  R$32.00"
+        android:text="Mussarela,catupiry,provolone e parmesão.  R$32,00"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPizza"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -39,13 +73,13 @@
         android:background="@drawable/border_view"
         android:paddingLeft="10dp"
         android:paddingTop="30dp"
-        android:text="Frango desfiado com catupiry.  R$ 32.00"
+        android:text="Frango desfiado com catupiry.  R$ 32,00"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textVeg2" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/radioButtonFrango"
         android:layout_width="wrap_content"
         android:layout_height="29dp"
         android:layout_marginLeft="57dp"
@@ -56,18 +90,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textVeg2" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/radioButtonQueijo"
         android:layout_width="wrap_content"
         android:layout_height="33dp"
         android:layout_marginLeft="56dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="13dp"
         android:text="4 queijos(30 cm)"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewPizza" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textViewPizza"
         android:layout_width="208dp"
         android:layout_height="41dp"
         android:layout_marginBottom="38dp"
@@ -83,18 +117,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="261dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="16dp"
-        android:onClick="openPaymentOptionsActivity"
-        android:text="Avançar"
-        app:layout_constraintEnd_toEndOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textVeg4" />
 
 </android.support.constraint.ConstraintLayout>

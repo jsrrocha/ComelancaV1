@@ -13,8 +13,13 @@ public class MadrugaLanchesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_madruga_lanches);
     }
 
-    public void openPaymentOptionsActivity(View view) {
-        Intent intent = new Intent(this, PaymentOptions.class);
+    public void openCartActivity(View view) {
+        Intent intent = new Intent(this, CartActivity.class);
+        startActivity(intent);
+    }
+
+    public void openListRestaurantActivity(View view) {
+        Intent intent = new Intent(this, ListRestaurantActivity.class);
         startActivity(intent);
     }
 

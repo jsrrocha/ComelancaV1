@@ -7,6 +7,40 @@
     android:background="@drawable/background1"
     tools:context=".MadrugaLanchesActivity">
 
+    <Button
+        android:id="@+id/buttonBack2"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="234dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:onClick="openListRestaurantActivity"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMix" />
+
+    <Button
+        android:id="@+id/buttonGo2"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="234dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:text="Avançar"
+        android:onClick="openCartActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewNatural"
+        app:layout_constraintTop_toBottomOf="@+id/textMix" />
+
     <TextView
         android:id="@+id/textVeg6"
         android:layout_width="271dp"
@@ -18,16 +52,20 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="11dp"
         android:background="@drawable/border_view"
+        android:paddingBottom="0dp"
         android:paddingLeft="10dp"
+        android:paddingRight="0dp"
         android:paddingTop="30dp"
-        android:text="Hamburguer, maionese, catchup, mostarda, alface, tomate, ovo e queijo. R$ 11.00"
+        android:text="Hamburguer, maionese, catchup, mostarda, alface, tomate, ovo e queijo. R$ 11,00"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMadruga"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp" />
 
     <RadioButton
         android:id="@+id/radioButtonDog"
@@ -66,12 +104,16 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/border_view"
+        android:paddingBottom="0dp"
         android:paddingLeft="10dp"
+        android:paddingRight="0dp"
         android:paddingTop="30dp"
-        android:text="Salsicha, maionese, catchup, mostarda, alface,tomate e queijo. R$ 9.00"
+        android:text="Salsicha, maionese, catchup, mostarda, alface,tomate e queijo. R$ 9,00"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textVeg6" />
+        app:layout_constraintTop_toBottomOf="@+id/textVeg6"
+        android:paddingEnd="0dp"
+        android:paddingStart="10dp" />
 
     <RadioButton
         android:id="@+id/radioButtonXis"
@@ -84,17 +126,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMadruga" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="269dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="20dp"
-        android:onClick="openPaymentOptionsActivity"
-        android:text="Avançar"
-        app:layout_constraintEnd_toEndOf="@+id/textViewMadruga"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="@+id/textViewMadruga"
-        app:layout_constraintTop_toBottomOf="@+id/textDog" />
 </android.support.constraint.ConstraintLayout>

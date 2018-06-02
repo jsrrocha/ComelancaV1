@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".CartActivity">
+
+    <TextView
+        android:id="@+id/textViewTotalValue"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginStart="160dp"
+        android:text="R$ 0,00"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPayment"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotal" />
+
+    <TextView
+        android:id="@+id/textViewTaxaValue"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
+        android:text="R$ 0,00"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTotalValue"
+        app:layout_constraintStart_toEndOf="@+id/textViewTaxa" />
+
+    <TextView
+        android:id="@+id/textViewCart"
+        android:layout_width="143dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="25dp"
+        android:text="Seu Carrinho"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSub"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginStart="87dp"
+        android:text="Sub Total do Pedido"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTaxa"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTaxa"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginStart="87dp"
+        android:text="Taxa de entrega"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTotal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginStart="87dp"
+        android:text="Total"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPayment"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSubValue"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:text="R$ 0,00"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTaxaValue"
+        app:layout_constraintStart_toEndOf="@+id/textViewSub" />
+
+    <Button
+        android:id="@+id/buttonPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginStart="87dp"
+        android:onClick="openPaymentOptionsActivity"
+        android:text="Escolher forma de pagamento"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

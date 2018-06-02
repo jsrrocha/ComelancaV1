@@ -15,6 +15,6 @@ public class StatusActivity extends AppCompatActivity {
         ProgressBar progress = (ProgressBar) findViewById(R.id.progress);
         TextView texto = (TextView) findViewById(R.id.texto);
 
-        new MinhaTask(this, progress, texto).execute();
+        new MyTask(this, progress, texto).execute();
     }
 }

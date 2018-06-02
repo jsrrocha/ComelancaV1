@@ -46,17 +46,10 @@ public class ListRestaurantActivity extends AppCompatActivity {
                 }
             }
         });
-
-
     }
 
-    public void openNatural2youAcitivity(View view) {
-        Intent intent = new Intent(this, Natural2youAcitivity.class);
-        startActivity(intent);
-    }
-
-    public void openPizzariaGataoActivity(View view) {
-        Intent intent = new Intent(this, PizzariaGataoActivity.class);
+    public void openMainActivity(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
