@@ -124,6 +124,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="188dp"
+        android:onClick="openStatusActivity"
         android:text="Fazer Pedido"
         app:layout_constraintEnd_toEndOf="@+id/textViewMadruga"
         app:layout_constraintHorizontal_bias="0.487"
