@@ -1,5 +1,6 @@
 package com.example.jessica.comelancav1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,6 +16,9 @@ public class PaymentOptions extends AppCompatActivity {
         setContentView(R.layout.activity_payment_options);
     }
 
-
+    public void openStatusActivity(View view) {
+        Intent intent = new Intent(this, StatusActivity.class);
+        startActivity(intent);
+    }
 
 }
