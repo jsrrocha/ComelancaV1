@@ -16,13 +16,11 @@
         android:layout_marginLeft="56dp"
         android:layout_marginRight="4dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="8dp"
         android:onClick="openListRestaurantActivity"
         android:text="Voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonGo2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textMix" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonGo2"
@@ -33,20 +31,17 @@
         android:layout_marginLeft="4dp"
         android:layout_marginRight="56dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
         android:onClick="openCartActivity"
         android:text="Avançar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttoBack2"
-        app:layout_constraintTop_toBottomOf="@+id/textMix"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toEndOf="@+id/buttoBack2" />
 
     <TextView
         android:id="@+id/textVeg6"
         android:layout_width="271dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="4dp"
         android:layout_marginEnd="57dp"
         android:layout_marginLeft="56dp"
         android:layout_marginRight="57dp"
@@ -61,9 +56,8 @@
         android:paddingTop="30dp"
         android:text="Hamburguer, maionese, catchup, mostarda, alface, tomate, ovo e queijo. R$ 11,00"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/radioButtonDog"
+        app:layout_constraintBottom_toTopOf="@+id/textDog"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMadruga" />
 
@@ -73,7 +67,7 @@
         android:layout_height="27dp"
         android:layout_marginLeft="56dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="6dp"
         android:text="Dog salsicha"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textVeg6" />
@@ -100,12 +94,12 @@
         android:id="@+id/textDog"
         android:layout_width="271dp"
         android:layout_height="69dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="17dp"
         android:layout_marginEnd="57dp"
         android:layout_marginLeft="56dp"
         android:layout_marginRight="57dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/border_view"
         android:paddingBottom="0dp"
         android:paddingEnd="0dp"
@@ -126,7 +120,7 @@
         android:layout_height="33dp"
         android:layout_marginLeft="56dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="10dp"
         android:text="Xis salada"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMadruga" />

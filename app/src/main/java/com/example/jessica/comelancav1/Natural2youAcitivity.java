@@ -29,10 +29,13 @@ public class Natural2youAcitivity extends AppCompatActivity {
         if(option2.isChecked()){
             text2 = (String) option2.getText();
         }
-        Intent intent = new Intent(this, CartActivity.class);
-        intent.putExtra("text1",text1);
-        intent.putExtra("text2",text2);
-        startActivity(intent);
+
+        if(!text1.equals("") && !text1.equals("")) {
+            Intent intent = new Intent(this, CartActivity.class);
+            intent.putExtra("text1", text1);
+            intent.putExtra("text2", text2);
+            startActivity(intent);
+        }
     }
     public void openListRestaurantActivity(View view) {
         Intent intent = new Intent(this, ListRestaurantActivity.class);
