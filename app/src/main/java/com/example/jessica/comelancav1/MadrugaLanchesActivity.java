@@ -30,10 +30,12 @@ public class MadrugaLanchesActivity extends AppCompatActivity {
         if(option2.isChecked()){
              text2 = (String) option2.getText();
         }
-        Intent intent = new Intent(this, CartActivity.class);
-        intent.putExtra("text1",text1);
-        intent.putExtra("text2",text2);
-        startActivity(intent);
+        if(!text1.equals("") || !text2.equals("")) {
+            Intent intent = new Intent(this, CartActivity.class);
+            intent.putExtra("text1", text1);
+            intent.putExtra("text2", text2);
+            startActivity(intent);
+        }
     }
 
     public void openListRestaurantActivity(View view) {

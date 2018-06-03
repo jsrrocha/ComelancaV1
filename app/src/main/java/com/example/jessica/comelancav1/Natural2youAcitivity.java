@@ -30,7 +30,7 @@ public class Natural2youAcitivity extends AppCompatActivity {
             text2 = (String) option2.getText();
         }
 
-        if(!text1.equals("") && !text1.equals("")) {
+        if(!text1.equals("") || !text2.equals("")) {
             Intent intent = new Intent(this, CartActivity.class);
             intent.putExtra("text1", text1);
             intent.putExtra("text2", text2);

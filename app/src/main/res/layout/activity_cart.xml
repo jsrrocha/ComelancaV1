@@ -26,12 +26,14 @@
     <TextView
         android:id="@+id/textViewSub"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
+        android:layout_height="17dp"
         android:layout_marginLeft="87dp"
         android:layout_marginStart="87dp"
+        android:layout_marginTop="31dp"
         android:text="Sub Total do Pedido"
         app:layout_constraintBottom_toTopOf="@+id/textViewTaxa"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itens" />
 
     <TextView
         android:id="@+id/textViewTaxa"
@@ -40,10 +42,12 @@
         android:layout_marginBottom="7dp"
         android:layout_marginLeft="87dp"
         android:layout_marginStart="87dp"
+        android:layout_marginTop="2dp"
         android:text="Taxa de entrega"
         app:layout_constraintBottom_toTopOf="@+id/textViewTotalValue"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSub" />
 
     <TextView
         android:id="@+id/textViewTotal"
@@ -71,11 +75,11 @@
         android:id="@+id/textViewSim2"
         android:layout_width="26dp"
         android:layout_height="18dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="28dp"
         android:text="R$"
-        app:layout_constraintStart_toEndOf="@+id/textViewSub"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSubValue"
         app:layout_constraintTop_toBottomOf="@+id/itens" />
 
     <Button
@@ -181,14 +185,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewSubTotal"
+        android:id="@+id/textViewSubValue"
         android:layout_width="25dp"
         android:layout_height="18dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginTop="28dp"
         android:text="0"
-        app:layout_constraintStart_toEndOf="@+id/textViewSim2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itens" />
 
     <TextView
@@ -217,11 +221,12 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="18dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="28dp"
         android:text=",00"
-        app:layout_constraintStart_toEndOf="@+id/textViewSubTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewSubValue"
         app:layout_constraintTop_toBottomOf="@+id/itens" />
 
     <TextView
