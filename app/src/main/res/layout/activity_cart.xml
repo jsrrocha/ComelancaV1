@@ -8,28 +8,6 @@
     tools:context=".CartActivity">
 
     <TextView
-        android:id="@+id/textViewTotalValue"
-        android:layout_width="70dp"
-        android:layout_height="20dp"
-        android:layout_marginBottom="18dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginStart="160dp"
-        android:text="R$ 0,00"
-        app:layout_constraintBottom_toTopOf="@+id/buttonPayment"
-        app:layout_constraintStart_toEndOf="@+id/textViewTotal" />
-
-    <TextView
-        android:id="@+id/textViewTaxaValue"
-        android:layout_width="70dp"
-        android:layout_height="20dp"
-        android:layout_marginBottom="6dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginStart="92dp"
-        android:text="R$ 0,00"
-        app:layout_constraintBottom_toTopOf="@+id/textViewTotalValue"
-        app:layout_constraintStart_toEndOf="@+id/textViewTaxa" />
-
-    <TextView
         android:id="@+id/textViewCart"
         android:layout_width="143dp"
         android:layout_height="38dp"
@@ -37,10 +15,11 @@
         android:layout_marginLeft="121dp"
         android:layout_marginRight="120dp"
         android:layout_marginStart="121dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="16dp"
         android:text="Seu Carrinho"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,7 +27,6 @@
         android:id="@+id/textViewSub"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:layout_marginBottom="7dp"
         android:layout_marginLeft="87dp"
         android:layout_marginStart="87dp"
         android:text="Sub Total do Pedido"
@@ -63,42 +41,198 @@
         android:layout_marginLeft="87dp"
         android:layout_marginStart="87dp"
         android:text="Taxa de entrega"
-        app:layout_constraintBottom_toTopOf="@+id/textViewTotal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTotalValue"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textViewTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="19dp"
         android:layout_marginLeft="87dp"
         android:layout_marginStart="87dp"
+        android:layout_marginTop="9dp"
         android:text="Total"
-        app:layout_constraintBottom_toTopOf="@+id/buttonPayment"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTaxa" />
 
     <TextView
-        android:id="@+id/textViewSubValue"
-        android:layout_width="70dp"
-        android:layout_height="20dp"
-        android:layout_marginBottom="7dp"
+        android:id="@+id/textViewSim1"
+        android:layout_width="26dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="R$"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPayment"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTotalValue" />
+
+    <TextView
+        android:id="@+id/textViewSim2"
+        android:layout_width="26dp"
+        android:layout_height="18dp"
         android:layout_marginLeft="67dp"
         android:layout_marginStart="67dp"
-        android:text="R$ 0,00"
-        app:layout_constraintBottom_toTopOf="@+id/textViewTaxaValue"
-        app:layout_constraintStart_toEndOf="@+id/textViewSub" />
+        android:layout_marginTop="33dp"
+        android:text="R$"
+        app:layout_constraintStart_toEndOf="@+id/textViewSub"
+        app:layout_constraintTop_toBottomOf="@+id/itens" />
 
     <Button
         android:id="@+id/buttonPayment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="144dp"
-        android:layout_marginLeft="87dp"
-        android:layout_marginStart="87dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginStart="84dp"
         android:onClick="openPaymentOptionsActivity"
         android:text="Escolher forma de pagamento"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/itens"
+        android:layout_width="262dp"
+        android:layout_height="158dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="15dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCart" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDecQ2"
+        android:layout_width="22dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/minus"
+        android:onClick="decreaseQuantity2"
+        app:layout_constraintEnd_toStartOf="@+id/itens"
+        app:layout_constraintStart_toEndOf="@+id/textViewQtd2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDecQ1"
+        android:layout_width="22dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="87dp"
+        android:onClick="decreaseQuantity1"
+        android:background="@drawable/minus"
+        app:layout_constraintEnd_toStartOf="@+id/itens"
+        app:layout_constraintStart_toEndOf="@+id/textViewQtd1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonIncQ2"
+        android:layout_width="22dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="144dp"
+        android:onClick="increaseQuantity2"
+        android:background="@drawable/mais"
+        app:layout_constraintEnd_toStartOf="@+id/textViewQtd2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonIncQ1"
+        android:layout_width="22dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="87dp"
+        android:onClick="increaseQuantity1"
+        android:background="@drawable/mais"
+        app:layout_constraintEnd_toStartOf="@+id/textViewQtd1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewQtd2"
+        android:layout_width="16dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="144dp"
+        android:paddingLeft="2dp"
+        android:text="1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonDecQ2"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonIncQ2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewQtd1"
+        android:layout_width="16dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="87dp"
+        android:paddingLeft="2dp"
+        android:text="1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonDecQ1"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonIncQ1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSubTotal"
+        android:layout_width="25dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="33dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/textViewSim2"
+        app:layout_constraintTop_toBottomOf="@+id/itens" />
+
+    <TextView
+        android:id="@+id/textViewTotalValue"
+        android:layout_width="25dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPayment"
+        app:layout_constraintEnd_toStartOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text=",00"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPayment"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="33dp"
+        android:text=",00"
+        app:layout_constraintStart_toEndOf="@+id/textViewSubTotal"
+        app:layout_constraintTop_toBottomOf="@+id/itens" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="76dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="2dp"
+        android:text="R$   5      ,00 "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSim2" />
 
 </android.support.constraint.ConstraintLayout>

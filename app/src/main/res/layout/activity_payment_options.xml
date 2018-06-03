@@ -154,7 +154,8 @@
         android:ems="10"
         android:hint="Coloque o valor"
         android:inputType="numberDecimal"
-        android:text="R$"
+
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -170,8 +171,10 @@
         android:layout_marginStart="120dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Coloque sem CPF"
+        android:hint="Coloque seu CPF"
         android:inputType="number"
+
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CPF" />
