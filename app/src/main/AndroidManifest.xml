@@ -30,9 +30,7 @@
         <activity android:name=".Natural2youAcitivity" />
         <activity android:name=".MadrugaLanchesActivity" />
         <activity android:name=".CartActivity" />
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+        <activity android:name=".LoginActivity"></activity>
         <activity
             android:name=".PaymentOptions"
             android:label="@string/title_activity_payment_options"
