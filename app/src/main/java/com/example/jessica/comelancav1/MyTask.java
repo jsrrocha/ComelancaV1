@@ -33,7 +33,7 @@ public class MyTask extends AsyncTask<Object, Object, String> {
 
             for (int i=0; i<4; i++) {
                 publishProgress();
-                Thread.sleep(1500);
+                Thread.sleep(4000);
             }
 
         } catch (InterruptedException e) {
