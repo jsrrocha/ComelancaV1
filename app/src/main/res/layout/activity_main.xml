@@ -20,7 +20,7 @@
         android:layout_marginTop="209dp"
         android:ems="10"
         android:hint="Digite seu CEP"
-        android:inputType="none|textPostalAddress"
+        android:inputType="none|number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonOK"
         app:layout_constraintStart_toStartOf="parent"
