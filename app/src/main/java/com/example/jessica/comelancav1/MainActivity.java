@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private static String cep;
     private Util util;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         this.setTitle("ComeLança");
 
         etZipCode = (EditText) findViewById(R.id.textCep);
+
 
     }
     public void openAddressActivity(View view) {
@@ -40,4 +42,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void validateCEP(View view){
+        etZipCode.setError(null);
+        String cep = etZipCode.getText().toString();
+
+        if(cep.length() != 8){
+            etZipCode.setError("Cep inválido");
+            etZipCode.requestFocus();
+        }else{
+            openAddressActivity(view);
+        }
+
+    }
 }

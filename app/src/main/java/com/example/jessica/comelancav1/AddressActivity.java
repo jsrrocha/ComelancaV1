@@ -3,12 +3,15 @@ package com.example.jessica.comelancav1;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.example.jessica.comelancav1.domain.Address;
 import com.example.jessica.comelancav1.domain.AddressRequest;
@@ -20,6 +23,14 @@ public class AddressActivity extends AppCompatActivity {
     private static String etZipCode;
     private Util util;
     private Context context;
+
+    //ui elements
+    private EditText mNumView;
+    private EditText mCompView;
+    private EditText mBairroView;
+    private EditText mAddressView;
+    private EditText mCityView;
+    private Spinner mSpinnerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +56,15 @@ public class AddressActivity extends AppCompatActivity {
                 R.id.editTextComp);
 
         new AddressRequest(this).execute();
+
+        // Set up the login form.
+        mAddressView = (EditText) findViewById(R.id.editTextAddress);
+        mNumView = (EditText) findViewById(R.id.editTextNum);
+        mCityView = (EditText) findViewById(R.id.editTextCity) ;
+        mCompView = (EditText) findViewById(R.id.editTextComp);
+        mBairroView = (EditText) findViewById(R.id.editTextBairro);
+        mSpinnerView = findViewById(R.id.spinnerState);
+
     }
 
 
@@ -102,6 +122,62 @@ public class AddressActivity extends AppCompatActivity {
         setField( R.id.editTextComp, address.getComplemento() );
         setField( R.id.editTextCity, address.getLocalidade() );
         setSpinner( R.id.spinnerState, R.array.states, address.getUf() );
+    }
+
+
+    public void attemptSearch(View view){
+        mAddressView.setError(null);
+        mNumView.setError(null);
+        mCityView.setError(null);
+        mCompView.setError(null);
+        mBairroView.setError(null);
+
+        String address = mAddressView.getText().toString();
+        String num = mNumView.getText().toString();
+        String city = mCityView.getText().toString();
+        String comp = mCompView.getText().toString();
+        String bairro = mBairroView.getText().toString();
+        String estado = mSpinnerView.getSelectedItem().toString();
+        boolean errorDetected = false;
+        View focusView = null;
+
+        if(bairro.isEmpty()){
+            mBairroView.setError("Campo obrigatório");
+            errorDetected = true;
+            focusView = mBairroView;
+        }
+
+        if(num.isEmpty()){
+            mNumView.setError("Campo obrigatório");
+            errorDetected = true;
+            focusView = mNumView;
+        }
+
+        if(address.isEmpty()){
+            mAddressView.setError("Campo obrigatório");
+            errorDetected = true;
+            focusView = mAddressView;
+        }
+
+        if(city.isEmpty()){
+            mCityView.setError("Campo obrigatório");
+            errorDetected = true;
+            focusView = mCityView;
+        }
+
+        if(estado.equals("*Estado")){
+            mSpinnerView.getSelectedView().setBackgroundColor(Color.RED);
+            errorDetected = true;
+            focusView = mSpinnerView;
+
+        }
+        if (errorDetected){
+            focusView.requestFocus();
+        } else{
+            openListRestaurantActivity(view);
+        }
+
+
     }
 
 }
