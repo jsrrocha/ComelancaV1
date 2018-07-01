@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
+    android:background="@drawable/back"
     tools:context=".ListRestaurantActivity">
 
     <ListView
         android:id="@+id/lista"
         android:layout_width="252dp"
-        android:layout_height="330dp"
+        android:layout_height="269dp"
         android:layout_marginEnd="66dp"
         android:layout_marginLeft="66dp"
         android:layout_marginRight="66dp"
@@ -48,10 +48,11 @@
         android:layout_marginLeft="148dp"
         android:layout_marginRight="148dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:onClick="openMainActivity"
         android:text="Voltar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lista" />
 </android.support.constraint.ConstraintLayout>
