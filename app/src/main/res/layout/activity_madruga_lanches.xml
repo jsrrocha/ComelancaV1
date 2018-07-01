@@ -5,48 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back"
-    tools:context=".MadrugaLanchesActivity">
+    tools:context=".MadrugaLanchesActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <Button
         android:id="@+id/buttoBack2"
         android:layout_width="111dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="234dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginStart="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
         android:onClick="openListRestaurantActivity"
         android:text="Voltar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonGo2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDog" />
 
     <Button
         android:id="@+id/buttonGo2"
         android:layout_width="157dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="234dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="56dp"
-        android:layout_marginStart="4dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
         android:onClick="openCartActivity"
         android:text="Avançar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttoBack2" />
+        app:layout_constraintStart_toEndOf="@+id/buttoBack2"
+        app:layout_constraintTop_toBottomOf="@+id/textDog" />
 
     <TextView
         android:id="@+id/textVeg6"
         android:layout_width="271dp"
         android:layout_height="71dp"
-        android:layout_marginBottom="4dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginRight="57dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="11dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/border_view"
         android:paddingBottom="0dp"
         android:paddingEnd="0dp"
@@ -56,18 +50,17 @@
         android:paddingTop="30dp"
         android:text="Hamburguer, maionese, catchup, mostarda, alface, tomate, ovo e queijo. R$ 11,00"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/textDog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMadruga" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioButton
         android:id="@+id/radioButtonDog"
         android:layout_width="wrap_content"
         android:layout_height="27dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
         android:text="Dog salsicha"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textVeg6" />
@@ -76,16 +69,14 @@
         android:id="@+id/textViewMadruga"
         android:layout_width="253dp"
         android:layout_height="41dp"
-        android:layout_marginBottom="38dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginLeft="64dp"
-        android:layout_marginRight="64dp"
-        android:layout_marginStart="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="Madruga dos Lanches"
         android:textSize="24sp"
         app:fontFamily="casual"
-        app:layout_constraintBottom_toTopOf="@+id/radioButtonMix"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -94,12 +85,11 @@
         android:id="@+id/textDog"
         android:layout_width="271dp"
         android:layout_height="69dp"
-        android:layout_marginBottom="17dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginRight="57dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/border_view"
         android:paddingBottom="0dp"
         android:paddingEnd="0dp"
@@ -109,20 +99,19 @@
         android:paddingTop="30dp"
         android:text="Salsicha, maionese, catchup, mostarda, alface,tomate e queijo. R$ 9,00"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttoBack2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textVeg6" />
 
     <RadioButton
         android:id="@+id/radioButtonXis"
         android:layout_width="wrap_content"
-        android:layout_height="33dp"
+        android:layout_height="31dp"
         android:layout_marginLeft="56dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="10dp"
         android:text="Xis salada"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMadruga" />
+        app:layout_constraintTop_toTopOf="@+id/textVeg6" />
 
 </android.support.constraint.ConstraintLayout>
