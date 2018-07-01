@@ -125,7 +125,7 @@
         android:layout_marginRight="4dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="27dp"
-        android:onClick="openStatusActivity"
+        android:onClick="openListActivity"
         android:text="Voltar"
         app:layout_constraintEnd_toStartOf="@+id/button5"
         app:layout_constraintStart_toStartOf="parent"

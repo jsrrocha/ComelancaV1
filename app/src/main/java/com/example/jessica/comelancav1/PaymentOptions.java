@@ -3,7 +3,6 @@ package com.example.jessica.comelancav1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -13,7 +12,7 @@ public class PaymentOptions extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.e("tag", "on");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_options);
 
@@ -25,7 +24,7 @@ public class PaymentOptions extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton rb = (RadioButton) group.findViewById(checkedId);
                 String option = rb.getText().toString();
-                Log.e("TAG",option);
+
                 EditText input = findViewById(R.id.editTextTroco);
                 if(option.equals("Sim")){
                     input.setVisibility(View.VISIBLE);
@@ -41,7 +40,7 @@ public class PaymentOptions extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton rb = (RadioButton) group.findViewById(checkedId);
                 String option = rb.getText().toString();
-                Log.e("TAG",option);
+
                 EditText input = findViewById(R.id.editTextCpf);
                 if(option.equals("Sim")){
                     input.setVisibility(View.VISIBLE);
@@ -58,15 +57,20 @@ public class PaymentOptions extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openListActivity(View view) {
+        Intent intent = new Intent(this, ListRestaurantActivity.class);
+        startActivity(intent);
+    }
+
     public void onClickOptions(View view){
-        Log.e("TAG","aqui");
+
         final RadioGroup group = findViewById(R.id.Troco);
         group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton button = (RadioButton) group.findViewById(checkedId);
                 String option = button.getText().toString();
-                Log.e("TAG",option);
+
                 if(option == "Sim"){
                     EditText input = findViewById(R.id.editTextTroco);
                     input.setVisibility(View.VISIBLE);
