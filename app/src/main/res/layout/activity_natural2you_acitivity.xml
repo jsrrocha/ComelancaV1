@@ -19,7 +19,7 @@
         android:background="@drawable/border_view"
         android:paddingLeft="10dp"
         android:paddingTop="30dp"
-        android:text="Mix de folhas verdes(Alface crespa, rúgula e agrião), cenoura e alface americana. R$ 20,00"
+        android:text="Mix de folhas verdes(Alface crespa, rúcula e agrião), cenoura e alface americana. R$ 20,00"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

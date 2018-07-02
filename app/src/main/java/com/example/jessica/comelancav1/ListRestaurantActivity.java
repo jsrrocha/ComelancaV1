@@ -22,7 +22,7 @@ public class ListRestaurantActivity extends AppCompatActivity {
 
         List<String> restaurantes = new ArrayList<String>();
         restaurantes.add("Natural 2 you");
-        restaurantes.add("Pizarria do Gatão");
+        restaurantes.add("Pizzaria do Gatão");
         restaurantes.add("Madruga dos Lanches");
 
 
